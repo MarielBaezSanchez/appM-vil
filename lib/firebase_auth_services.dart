@@ -8,7 +8,7 @@ import 'package:historial_exit/toast.dart';
 
 class FirebaseAuthService {
 
-  FirebaseAuth _auth = FirebaseAuth.instance;
+  final FirebaseAuth _auth = FirebaseAuth.instance;
 
   Future<User?> signUpWithEmailAndPassword(String email, String password) async {
 
@@ -38,15 +38,9 @@ class FirebaseAuthService {
       } else {
         showToast(message: 'Parece que ocurrió un error: ${e.code}');
       }
-
     }
     return null;
-
   }
-
-
-
-
 }
 
 
