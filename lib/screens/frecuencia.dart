@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:historial_exit/screens/historial.dart';
 import 'package:historial_exit/screens/saturacion.dart';
+import 'package:historial_exit/theme/app_theme.dart';
 
 class FrecuenciaCardiaca extends StatefulWidget {
   const FrecuenciaCardiaca({super.key});
@@ -17,11 +18,9 @@ class _FrecuenciaCardiacaState extends State<FrecuenciaCardiaca> {
       _selectedIndex = index;
     });
 
-    // Si se selecciona "Inicio" (índice 0), cerrar la pantalla actual
     if (index == 0) {
       Navigator.pop(context);
     } else {
-      // Navegar a las respectivas pantallas según el índice seleccionado
       switch (index) {
         case 1:
           Navigator.pushReplacement(
@@ -57,7 +56,7 @@ class _FrecuenciaCardiacaState extends State<FrecuenciaCardiaca> {
           height: 100,
           child: CircularProgressIndicator(
             strokeWidth: 8,
-            valueColor: AlwaysStoppedAnimation<Color>(Colors.blue),
+            valueColor: AlwaysStoppedAnimation<Color>(AppTheme.encabezados),
           ),
         ),
       ),

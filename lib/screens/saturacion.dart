@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:historial_exit/screens/frecuencia.dart';
 import 'package:historial_exit/screens/historial.dart';
+import 'package:historial_exit/theme/app_theme.dart';
 
 class SaturacionOxigeno extends StatefulWidget {
   const SaturacionOxigeno({super.key});
@@ -55,7 +56,7 @@ int _selectedIndex = 0;
           height: 100,
           child: CircularProgressIndicator(
             strokeWidth: 8,
-            valueColor: AlwaysStoppedAnimation<Color>(Colors.blue),
+            valueColor: AlwaysStoppedAnimation<Color>(AppTheme.encabezados),
           ),
         ),
       ),

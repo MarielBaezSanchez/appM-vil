@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:historial_exit/screens/frecuencia.dart';
 import 'package:historial_exit/screens/historial.dart';
 import 'package:historial_exit/screens/saturacion.dart';
+import 'package:historial_exit/theme/app_theme.dart';
 
 
 class HomeScreen extends StatefulWidget {
@@ -16,7 +17,7 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Monitor Cardíaco y de Saturación'),
+        title: const Text('Monitor Cardíaco y de Saturación',),
       ),
       drawer: Drawer(
         child: ListView(
@@ -24,7 +25,7 @@ class _HomeScreenState extends State<HomeScreen> {
           children: <Widget>[
             const DrawerHeader(
               decoration: BoxDecoration(
-                color: Colors.blue,
+                color: AppTheme.encabezados,
               ),
               child: Text(
                 'CodeCrafters',
@@ -78,19 +79,19 @@ class _HomeScreenState extends State<HomeScreen> {
           ListTile(
             title: const Text(
               'Saturación de Oxígeno',
-              style: TextStyle(color: Color.fromARGB(255, 0, 0, 0)),
+              style: TextStyle(color: AppTheme.secondaryColor),
             ),
             subtitle: const Text(
               'Información sobre la saturación de oxígeno',
-              style: TextStyle(color: Color.fromARGB(181, 0, 0, 0)),
+              style: TextStyle(color: AppTheme.secondaryColor),
             ),
             leading: const Icon(
               Icons.inbox_rounded,
-              color: Color.fromARGB(255, 0, 0, 0),
+              color: AppTheme.secondaryColor,
             ),
             trailing: const Icon(
               Icons.arrow_right_outlined,
-              color: Color.fromARGB(255, 0, 0, 0),
+              color: AppTheme.secondaryColor,
             ),
             onTap: () {
               final ruta1 = MaterialPageRoute(builder: (context) {
@@ -103,19 +104,19 @@ class _HomeScreenState extends State<HomeScreen> {
           ListTile(
             title: const Text(
               'Frecuencia Cardíaca',
-              style: TextStyle(color: Color.fromARGB(255, 0, 0, 0)),
+              style: TextStyle(color: AppTheme.secondaryColor),
             ),
             subtitle: const Text(
               'Información sobre la frecuencia cardíaca',
-              style: TextStyle(color: Color.fromARGB(181, 0, 0, 0)),
+              style: TextStyle(color: AppTheme.secondaryColor),
             ),
             leading: const Icon(
               Icons.favorite,
-              color: Color.fromARGB(255, 0, 0, 0),
+              color: AppTheme.secondaryColor,
             ),
             trailing: const Icon(
               Icons.arrow_right_outlined,
-              color: Color.fromARGB(255, 0, 0, 0),
+              color: AppTheme.secondaryColor,
             ),
             onTap: () {
               final ruta2 = MaterialPageRoute(builder: (context) {
@@ -128,19 +129,19 @@ class _HomeScreenState extends State<HomeScreen> {
           ListTile(
             title: const Text(
               'Historial',
-              style: TextStyle(color: Color.fromARGB(255, 0, 0, 0)),
+              style: TextStyle(color: AppTheme.secondaryColor),
             ),
             subtitle: const Text(
               'Historial de mediciones',
-              style: TextStyle(color: Color.fromARGB(181, 0, 0, 0)),
+              style: TextStyle(color: AppTheme.secondaryColor),
             ),
             leading: const Icon(
               Icons.history,
-              color: Color.fromARGB(255, 0, 0, 0),
+              color: AppTheme.secondaryColor,
             ),
             trailing: const Icon(
               Icons.arrow_right_outlined,
-              color: Color.fromARGB(255, 0, 0, 0),
+              color: AppTheme.secondaryColor,
             ),
             onTap: () {
               final ruta3 = MaterialPageRoute(builder: (context) {

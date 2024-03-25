@@ -17,11 +17,9 @@ class _HistorialState extends State<Historial> {
       _selectedIndex = index;
     });
 
-    // Si se selecciona "Inicio" (índice 0), cerrar la pantalla actual
     if (index == 0) {
       Navigator.pop(context);
     } else {
-      // Navegar a las respectivas pantallas según el índice seleccionado
       switch (index) {
         case 1:
           Navigator.pushReplacement(
@@ -87,7 +85,6 @@ class _HistorialState extends State<Historial> {
   }) {
     return GestureDetector(
       onTap: () {
-        // Aquí puedes agregar cualquier acción adicional al tocar un elemento del historial
         print('Tocado el elemento del historial');
       },
       child: Container(

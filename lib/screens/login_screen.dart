@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:historial_exit/screens/home_screen.dart'; // Importa la pantalla HomeScreen
+import 'package:historial_exit/screens/home_screen.dart';
+import 'package:historial_exit/theme/app_theme.dart'; // Importa la pantalla HomeScreen
 
 class LoginPage extends StatefulWidget {
   const LoginPage({Key? key}) : super(key: key); // Corrige el parámetro key
@@ -103,7 +104,7 @@ class _LoginPageState extends State<LoginPage> {
   Widget _buildGreyText(String text) {
     return Text(
       text,
-      style: const TextStyle(color: Colors.grey),
+      style: const TextStyle(color: AppTheme.widgetsColor),
     );
   }
 
@@ -161,7 +162,7 @@ class _LoginPageState extends State<LoginPage> {
       ),
       child: const Text(
         "Ingresar", 
-        style: TextStyle(color: Colors.black),
+        style: TextStyle(color: AppTheme.backColor),
       ),
     );
   }
