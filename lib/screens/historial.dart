@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:historial_exit/screens/frecuencia.dart';
 import 'package:historial_exit/screens/saturacion.dart';
+import 'package:historial_exit/theme/app_theme.dart';
 
 class Historial extends StatefulWidget {
   const Historial({super.key});
@@ -42,6 +43,7 @@ class _HistorialState extends State<Historial> {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Historial'),
+        backgroundColor: AppTheme.backColor,
       ),
       body: ListView(
         children: [
@@ -62,15 +64,15 @@ class _HistorialState extends State<Historial> {
         onTap: _onItemTapped,
         items: const [
           BottomNavigationBarItem(
-            icon: Icon(Icons.home),
+            icon: Icon(Icons.home, color: AppTheme.azulito,),
             label: 'Inicio',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.list),
+            icon: Icon(Icons.list, color: AppTheme.azulito,),
             label: 'Saturación de Oxígeno',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.favorite),
+            icon: Icon(Icons.favorite, color: AppTheme.azulito,),
             label: 'Frecuencia Cardiaca',
           ),
         ],
@@ -91,7 +93,7 @@ class _HistorialState extends State<Historial> {
         padding: const EdgeInsets.all(16),
         margin: const EdgeInsets.symmetric(vertical: 8, horizontal: 16),
         decoration: BoxDecoration(
-          color: Colors.grey[200],
+          color: AppTheme.widgetsColor,
           borderRadius: BorderRadius.circular(12),
         ),
         child: Column(

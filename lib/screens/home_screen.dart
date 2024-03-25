@@ -25,7 +25,7 @@ class _HomeScreenState extends State<HomeScreen> {
           children: <Widget>[
             const DrawerHeader(
               decoration: BoxDecoration(
-                color: AppTheme.encabezados,
+                color: AppTheme.azulito,
               ),
               child: Text(
                 'CodeCrafters',

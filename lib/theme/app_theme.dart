@@ -3,7 +3,7 @@ import 'package:google_fonts/google_fonts.dart';
 
 class AppTheme {
   //constante del color primario
-  static const encabezados = Colors.blue;
+  static const azulito = Colors.blue;
   //constanete del color secundario
   static const secondaryColor = Colors.black;
   //constante de color de fondo
@@ -18,7 +18,7 @@ class AppTheme {
       //colores del tema
       scaffoldBackgroundColor: backColor,
       appBarTheme: AppBarTheme(
-        color: encabezados,
+        color: azulito,
         titleTextStyle: GoogleFonts.lato(
           color: backColor,
           fontSize: 28.5,
@@ -26,7 +26,7 @@ class AppTheme {
         ),
         ),
         iconTheme: const IconThemeData(
-          color: encabezados,
+          color: azulito,
           size: 35.0,
         ),
       elevatedButtonTheme: ElevatedButtonThemeData(
@@ -46,7 +46,7 @@ class AppTheme {
           fontWeight: FontWeight.bold,
           color: secondaryColor,
           decoration: TextDecoration.underline,
-          decorationColor: encabezados,
+          decorationColor: azulito,
           decorationStyle: TextDecorationStyle.double,
           decorationThickness: 1.0, //fontFamily: GoogleFonts.dancingScript(),
         ),

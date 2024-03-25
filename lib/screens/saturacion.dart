@@ -56,7 +56,7 @@ int _selectedIndex = 0;
           height: 100,
           child: CircularProgressIndicator(
             strokeWidth: 8,
-            valueColor: AlwaysStoppedAnimation<Color>(AppTheme.encabezados),
+            valueColor: AlwaysStoppedAnimation<Color>(AppTheme.azulito),
           ),
         ),
       ),
@@ -65,15 +65,15 @@ int _selectedIndex = 0;
         onTap: _onItemTapped,
         items: const [
           BottomNavigationBarItem(
-            icon: Icon(Icons.home),
+            icon: Icon(Icons.home, color: AppTheme.azulito,),
             label: 'Inicio',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.favorite),
+            icon: Icon(Icons.favorite, color: AppTheme.azulito,),
             label: 'Frecuencia Cardíaca',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.history),
+            icon: Icon(Icons.history, color: AppTheme.azulito,),
             label: 'Historial',
           ),
         ],

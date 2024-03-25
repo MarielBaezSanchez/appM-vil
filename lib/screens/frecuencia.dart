@@ -56,7 +56,7 @@ class _FrecuenciaCardiacaState extends State<FrecuenciaCardiaca> {
           height: 100,
           child: CircularProgressIndicator(
             strokeWidth: 8,
-            valueColor: AlwaysStoppedAnimation<Color>(AppTheme.encabezados),
+            valueColor: AlwaysStoppedAnimation<Color>(AppTheme.azulito),
           ),
         ),
       ),
@@ -65,15 +65,15 @@ class _FrecuenciaCardiacaState extends State<FrecuenciaCardiaca> {
         onTap: _onItemTapped,
         items: const [
           BottomNavigationBarItem(
-            icon: Icon(Icons.home),
+            icon: Icon(Icons.home, color: AppTheme.azulito,),
             label: 'Inicio',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.list),
+            icon: Icon(Icons.list, color: AppTheme.azulito,),
             label: 'Saturación de Oxígeno',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.history),
+            icon: Icon(Icons.history, color: AppTheme.azulito,),
             label: 'Historial',
           ),
         ],
